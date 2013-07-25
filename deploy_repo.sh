@@ -5,9 +5,9 @@ if [ x$repo = x ]; then
 fi
 
 mvn install:install-file \
-  -Dfile=actionbarsherlock/libs/android-support-v4-r13.1.jar \
+  -Dfile=actionbarsherlock/libs/support-v4-18.0.1.jar \
   -DgroupId=com.android.support -DartifactId=support-v4 \
-  -Dversion=13.0.1 -Dpackaging=jar -DgeneratePom=true \
+  -Dversion=18.0.1 -Dpackaging=jar -DgeneratePom=true \
   -DlocalRepositoryPath=$repo || exit 1
 
 gradle clean build || exit 1
