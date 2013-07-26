@@ -17,3 +17,9 @@ mvn install:install-file \
   -DgroupId=com.actionbarsherlock -DartifactId=actionbarsherlock \
   -Dversion=4.3.2-SNAPSHOT -Dpackaging=aar -DgeneratePom=true \
   -DlocalRepositoryPath=$repo || exit 1
+
+mvn install:install-file \
+  -Dfile=actionbarsherlock-i18n/build/libs/actionbarsherlock-i18n-4.3.2-SNAPSHOT.aar \
+  -DgroupId=com.actionbarsherlock -DartifactId=actionbarsherlock-i18n \
+  -Dversion=4.3.2-SNAPSHOT -Dpackaging=aar -DgeneratePom=true \
+  -DlocalRepositoryPath=$repo || exit 1
